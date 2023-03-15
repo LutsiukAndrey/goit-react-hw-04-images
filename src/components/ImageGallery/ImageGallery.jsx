@@ -24,6 +24,7 @@ export const ImageGallery = ({ photoQuery }) => {
         setLoading(true);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [photoQuery]);
 
   useEffect(() => {
@@ -51,6 +52,7 @@ export const ImageGallery = ({ photoQuery }) => {
 
       getPhotos();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading]);
 
   const paginationFunc = () => {
