@@ -24,6 +24,7 @@ export const ImageGallery = ({ photoQuery }) => {
         setLoading(true);
       }
     }
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [photoQuery]);
 
