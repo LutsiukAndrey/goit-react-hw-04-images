@@ -6,7 +6,7 @@ export const Searchbar = ({ handleFormSubmit }) => {
   const [photo, setPhoto] = useState('');
 
   const onInput = event => {
-    setPhoto(event.currentTarget.value.toLowerCase().trim());
+    setPhoto(event.currentTarget.value);
   };
   const onSubmit = event => {
     event.preventDefault();
