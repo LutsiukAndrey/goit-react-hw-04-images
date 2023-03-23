@@ -3,18 +3,18 @@ import s from './Searchbar.module.css';
 import PropTypes from 'prop-types';
 
 export const Searchbar = ({ handleFormSubmit }) => {
-  const [photo, setPhoto] = useState('');
+  const [qwery, setQwery] = useState('');
 
   const onInput = event => {
-    setPhoto(event.currentTarget.value);
+    setQwery(event.currentTarget.value);
   };
   const onSubmit = event => {
     event.preventDefault();
-    if (photo === '') {
+    if (qwery === '') {
       return;
     }
-    handleFormSubmit(photo);
-    setPhoto('');
+    handleFormSubmit(qwery);
+    setQwery('');
   };
 
   return (
@@ -30,7 +30,7 @@ export const Searchbar = ({ handleFormSubmit }) => {
           type="text"
           autoComplete="off"
           autoFocus
-          value={photo}
+          value={qwery}
           placeholder="Search images and photos"
         />
       </form>
